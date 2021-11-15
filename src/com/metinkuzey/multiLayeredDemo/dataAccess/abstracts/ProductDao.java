@@ -1,0 +1,13 @@
+package com.metinkuzey.multiLayeredDemo.dataAccess.abstracts;
+
+import com.metinkuzey.multiLayeredDemo.entities.concretes.Product;
+
+import java.util.List;
+
+public interface ProductDao {
+    void add(Product product);
+    void delete(Product product);
+    void update(Product product);
+    Product get(int id);
+    List<Product> getAll();// ArrayList is generic structure
+}
